@@ -1,0 +1,123 @@
+@import 'partials/reset';
+@import 'partials/styling';
+
+html {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+}
+
+body {
+    color: $gray;
+    font: 16px/1.6 $elite;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    background-color: transparentize($dark, .4);
+    color: darken($gray, 20%);
+    font: 2.5rem/0.75 $elite;
+    margin: 5rem 0;
+    text-align: left;
+    transform: rotate(-5deg);
+}
+
+form {
+    min-height: 60px;
+    // margin: 3vh;
+}
+
+footer {
+    background-color: transparentize($dark, .4);
+    color: darken($gray, 20%);
+}
+
+video {
+  border: 2px solid white;
+  margin: 5px;
+  height: 200px;
+  width: 36%;
+  overflow:hidden;
+
+}
+.search-word {
+    background: $dark;
+    border: 1px solid $gray;
+    color: darken($gray, 20%);
+    font: 1rem $elite;
+    padding: 5px;
+    width: 30%;
+
+    &:focus {
+        color: $light;
+    }
+}
+
+.button-search,
+.overlay-btn {
+    border: 1px solid $dark;
+    background: transparentize($dark, .1);
+    color: #ccc;
+    font: 1rem $elite;
+    margin: 10px 5px;
+    padding: 10px 25px;
+
+    &:hover {
+        background: lighten($dark, 10%);
+        border: 1px solid $light;
+        color: $light;
+    }
+}
+
+.button-10images,
+.button-10videos,
+.button-random {
+    @extend.button-search;
+    display: block;
+    float: left;
+}
+
+.container-wrapper {
+    margin: 0 auto;
+}
+
+.container-results {
+    // @include flexbox(stretch);
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    @include boxshadow;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    @include abscenter;
+    background-color: transparentize($dark, .2);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+.overlay-box {
+    @include abscenter;
+    width: 90%;
+    overflow: hidden;
+    border: 1px solid $light;
+}
+
+.imgcont {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.2);
+    border: 5px solid white;
+    transition: 0.5s ease;
+  }
+}

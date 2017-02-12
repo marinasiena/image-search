@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>JS ImageVideo Search</title>
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  <link href="//fonts.googleapis.com/css?family=Special Elite&subset=latin" rel="stylesheet" type="text/css">
+  <link rel=stylesheet type="text/css" href="styles/main.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Javascript Image | Video Search</h1>
+  </header>
+
+  <main>
+
+    <div class='overlay is-hidden'>
+        <p class='overlay-text'></p>
+        <button class='overlay-btn'>close</button>
+        <div class='overlay-image-container'></div>
+    </div>
+
+    <section>
+
+      <form name='search-form' type="submit" class='search-form'>
+
+        <button type="submit" form='search-form' class='button-10images'>10 images</button>
+
+        <button type="submit" form='search-form' class='button-10videos'>10 videos</button>
+
+        <label for='search'>OR search to see ...</label>
+
+        <input type='text' name='search' class='search-word' />
+
+        <button type="submit" form='search-form' class='button-search'>get search</button>
+
+      </form>
+
+    </section>
+
+    <section class='container-wrapper'>
+      <p class='message'></p>
+
+      <div class='container-results is-hidden'>
+      </div>
+
+      <!-- <div class='overlay is-hidden'>
+          <p class='overlay-text'></p>
+          <button class='overlay-btn'>close</button>
+          <div class='overlay-image-container'></div>
+      </div> -->
+
+
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; 2017 vallyre.com</span>
+  </footer>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+// colors
+$light: rgb(246, 239, 228); //merino
+$gray: rgb(176, 176, 176); //silver chalice
+$green: rgb(152, 158, 35); //citron
+$brown: rgb(158, 110, 44); //luxor gold
+$dark: rgb(39, 42, 30); //log cabin
+
+//fonts
+$elite: 'Special Elite', sans-serif;
+
+//mixins
+@mixin flexbox($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-content: center;
+  flex-flow: row wrap;
+}
+@mixin abscenter {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin boxshadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.is-visible {
+    display: inherit;
+}
+
+.is-hidden {
+    display: none;
+}
